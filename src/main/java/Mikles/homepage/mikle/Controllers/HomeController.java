@@ -53,7 +53,7 @@ public class HomeController {
         return "about";
     }
 
-    @RequestMapping(value = "about")
+    @RequestMapping(value = "projects")
     public String projects(Model model) {
 
         model.addAttribute("title", "first title");
@@ -65,6 +65,7 @@ public class HomeController {
         return "projects";
     }
 
+    @RequestMapping(value = "contacts")
     public String contacts(Model model) {
 
         model.addAttribute("title", "first title");

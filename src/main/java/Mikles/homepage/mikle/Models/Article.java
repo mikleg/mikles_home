@@ -21,6 +21,8 @@ public class Article {
     @NotNull
     private LocalDateTime dateOfCreation;
 
+    @Lob
+    @Column(name = "description", columnDefinition = "LONGTEXT")
     private String text;
 
     @ManyToMany (mappedBy = "articles")
