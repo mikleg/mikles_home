@@ -63,9 +63,9 @@ public class Article {
         this.text = text;
     }
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
 
     public LocalDateTime getDateOfCreation() {
         return dateOfCreation;

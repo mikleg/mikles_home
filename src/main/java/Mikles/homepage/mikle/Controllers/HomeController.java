@@ -26,7 +26,7 @@ public class HomeController {
 
 //            Article newArt = new Article("title " + num.toString(), "text" + num.toString());
 //            articlesDAO.save(newArt);
-            Page mainPage = pagesDAO.findById(4).orElse(null);
+            Page mainPage = pagesDAO.findById(5).orElse(null);
             List<Article> articles= mainPage.getArticles();
 
             model.addAttribute("articles", articles);
@@ -46,7 +46,7 @@ public class HomeController {
 //            al.add(mainArticle);
 //            Page newPage = new Page("", al);
 //            pagesDAO.save(newPage);
-        Page mainPage = pagesDAO.findById(4).orElse(null);
+        Page mainPage = pagesDAO.findById(6).orElse(null);
         List<Article> articles= mainPage.getArticles();
 
         model.addAttribute("articles", articles);
@@ -58,7 +58,7 @@ public class HomeController {
 
         model.addAttribute("title", "first title");
 
-        Page mainPage = pagesDAO.findById(4).orElse(null);
+        Page mainPage = pagesDAO.findById(7).orElse(null);
         List<Article> articles= mainPage.getArticles();
 
         model.addAttribute("articles", articles);
@@ -70,7 +70,7 @@ public class HomeController {
 
         model.addAttribute("title", "first title");
 
-        Page mainPage = pagesDAO.findById(4).orElse(null);
+        Page mainPage = pagesDAO.findById(5).orElse(null);
         List<Article> articles= mainPage.getArticles();
 
         model.addAttribute("articles", articles);
