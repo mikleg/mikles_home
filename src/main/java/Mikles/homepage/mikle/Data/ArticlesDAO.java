@@ -12,6 +12,6 @@ import java.util.ArrayList;
 @Repository
 @Transactional
 public interface ArticlesDAO extends CrudRepository<Article, Integer> {
-//    @Query(value="SELECT * FROM articles WHERE id =:foobar`", nativeQuery = true)
-//public ArrayList<Article> get(@Param(value="foobar") int someId);
+    @Query(value="SELECT * FROM articles WHERE title=:foobar LIMIT 1", nativeQuery = true)
+    public Page getArticleByName(@Param(value="foobar") String name);
 }

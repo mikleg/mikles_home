@@ -22,12 +22,23 @@ public class Page {
     @ManyToMany(cascade=CascadeType.ALL)
     private List<Article> articles;
 
+    public boolean showTitle;
+
     public Page() {
     }
 
-    public Page(@Size(min = 0, max = 65) String title, List<Article> articles) {
+    public Page(@Size(min = 0, max = 65) String title, List<Article> articles, boolean showTitle) {
         this.title = title;
         this.articles = articles;
+        this.showTitle = showTitle;
+    }
+
+    public boolean getShowTitle() {
+        return showTitle;
+    }
+
+    public void setShowTitle(boolean showTitle) {
+        this.showTitle = showTitle;
     }
 
     public Integer getId() {
@@ -38,6 +49,8 @@ public class Page {
 
         return title;
     }
+
+
 
     public void setTitle(String title) {
         this.title = title;

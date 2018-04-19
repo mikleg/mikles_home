@@ -17,7 +17,7 @@
             <main id="articles">
                 <article th:each="article : ${articles}" >
                     <h2 class="title" th:text="${article.title}">Article Title</h2>
-                        <p  th:text="${article.text}">     </p>
+                        <p  th:utext="${article.text}">     </p>
                  </article>
             </main>
         </div>  <!-- div class="col-md-12"> -->
